@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+  // adding methods to objects
+  function people(name,age) {
+    this.age = age;
+    this.name = name;
+    this.years_retire = yearsleft;
+  }
+  function yearsleft() {
+    var numyears = 70-this.age;
+    return numyears;
+
+  }
+  var person1 = new people('john',24);
+  var person2 = new people('deo',25);
+
+
+  </script>
+</head>
+<body>
+  <script type="text/javascript">
+  document.write(person1.name+' has '+person1.years_retire()+' years to retire<br>');
+  document.write(person2.name+' has '+person2.years_retire()+' years to retire');
+  </script>
+</body>
+</html>

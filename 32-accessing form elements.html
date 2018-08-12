@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form name="myform" action="#" method="post">
+    username:<input type="text" name="username" value="username"><br>
+    password:<input type="text" name="prasad" value="password"><br>
+    <button type="submit" name="submit">submit</button>
+
+  </form>
+  <script type="text/javascript">//we also give 'myform' insted of form[0].
+  var x = document.forms[0].elements[0].name;
+  document.write(x);
+
+  </script>
+
+</body>
+</html>
